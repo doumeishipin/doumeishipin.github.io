@@ -175,14 +175,24 @@ video {
 }
 
 .siteurl {
-    color: #e1f0db;
-    background: #000000;
-    border-radius: 0.25rem;
     font-size: 14px;
-    display: inline-block;
-    padding: 0 5px;
     line-height: 30px;
+    margin: 2% auto 0;
 }
+
+.urls {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 0.9rem;
+    padding: 0 8px;
+    color: #e1f0db;
+    margin-bottom: 20px;
+}
+
+.bg-color-blue {
+    background-color: #43c1ff;
+  }
 
 .imgs {
     width: 100%;
