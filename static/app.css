@@ -123,7 +123,7 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
+    width: 90%;
     text-align: center;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
@@ -138,8 +138,22 @@ video {
 .title {
     width: 90%;
     margin: 4% auto 0;
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: #e1f0db;
+    background-image: radial-gradient(circle, #d5fcfc, #925839, #e0ba4f, #fbdf9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .link_content {
@@ -196,4 +210,19 @@ video {
 
 .imgs {
     width: 100%;
+}
+
+@media(max-width: 738px) {
+    .logo {
+        width: 180px;
+        margin: 0 auto 42%;
+    }
+    .title {
+        width: 100%;
+        margin: 0 auto 0;
+        background-image: radial-gradient(circle, #fee2de, #96def9, #8a2b47, #fcebe3);
+    }
+    .link_content .btn {
+        color: #fde0d8;
+    }
 }
