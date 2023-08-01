@@ -10,7 +10,7 @@
 html,
 body{
     margin: 0 auto;
-    background-color: #bb9871;
+    background-color: #929ead;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -32,6 +32,18 @@ video {
     left: 0;
     bottom: 0;
     z-index: 0;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%),
+      radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
 }
 
 .Header {
@@ -140,7 +152,7 @@ video {
     margin: 4% auto 0;
     font-size: 2rem;
     color: #e1f0db;
-    background-image: radial-gradient(circle, #d5fcfc, #925839, #e0ba4f, #fbdf9b);
+    background-image: radial-gradient(circle, #d5fcfc, #925839, #e0ba4f, #fbdf9b, #d5fcfc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
@@ -215,14 +227,11 @@ video {
 @media(max-width: 738px) {
     .logo {
         width: 180px;
-        margin: 0 auto 42%;
+        margin: 0 auto 10%;
     }
     .title {
         width: 100%;
         margin: 0 auto 0;
-        background-image: radial-gradient(circle, #fee2de, #96def9, #8a2b47, #fcebe3);
-    }
-    .link_content .btn {
-        color: #fde0d8;
+        background-image: radial-gradient(circle, #fee2de, #96def9, #8a2b47, #fcebe3, #fee2de);
     }
 }
