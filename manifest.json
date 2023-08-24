@@ -1,15 +1,1 @@
-{
-    "name": "抖妹视频",
-    "short_name": "抖妹",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#1d1d28",
-    "theme_color": "#1d1d28",
-    "icons": [
-       {
-          "src": "/static/add_icon.png",
-          "sizes": "192x192",
-          "type": "image/png"
-       }
-    ]
- }
+{"name":"抖妹视频","short_name":"抖妹","start_url":"/","display":"standalone","background_color":"#1d1d28","theme_color":"#1d1d28","icons":[{"src":"/static/add_icon.png","sizes":"192x192","type":"image/png"}]}
